@@ -151,3 +151,27 @@ spotrebovať – niektoré bežné typy médií sú „text/plain“,
         }
 
     }
+
+## HTTP Method Annotation	Usage
+
+    @GetMapping	Used to specify GET requests to retrieve resources
+    @PostMapping	Used to specify POST requests to create new resources
+    @PutMapping	Used to specify PUT requests to update existing resources
+    @DeleteMapping	Used to specify DELETE requests to remove specific resources
+
+
+
+- Map HTTP requests to controllers and
+Preview: Docs Methods are reusable pieces of code in classes. The difference between a method and a function is that methods are always related to a class or an object.
+methods
+(**@RestController** and **@RequestMapping**)
+- Specify a path attribute to become a base path
+(**@RequestMapping** at the class level)
+- Declare request types using HTTP method annotations
+(**@GetMapping**, **@PostMapping**, **@PutMapping**, and **@DeleteMapping**)
+- Access request parameters in a method (**@RequestParam**)
+- Bind data using template (**@PathVariable**)
+- Fine-tune the status code returned by a method (**@ResponseStatus**)
+
+
+  All of these annotations and ResponseStatusException are imported from the org.springframework.web.bind.annotation package.
